@@ -82,8 +82,8 @@ all the defaults, I can always tweak them later if required.  It generated an
     * :ref:`modindex`
     * :ref:`search`
 
-I then of course, created ``intro.rst`` and ``entry_one.rst`` alongside
-the ``index.rst`` and entered the beginnings of this very journal in them.
+I then of course, created :file:`intro.rst` and :file:`entry_one.rst` alongside
+the :file:`index.rst` and entered the beginnings of this very journal in them.
 Very meta.
 
 When I want to generate the pretty HTML documentation, all that's required is:
@@ -93,15 +93,15 @@ When I want to generate the pretty HTML documentation, all that's required is:
     $ cd docs
     $ make html
 
-It will generate the documentation in ``docs/_build/html/`` so just open up
-``index.html`` to view the tasty, beautiful documentation.  Wait, no-- the
+It will generate the documentation in :file:`docs/_build/html/` so just open up
+:file:`index.html` to view the tasty, beautiful documentation.  Wait, no-- the
 default theme is really quite horrible.  Let's fix that.
 
 .. sourcecode:: bash
 
     $ pip install sphinx_rtd_theme
 
-Then edit the ``docs/conf.py`` file and add to the bottom:
+Then edit the :file:`docs/conf.py` file and add to the bottom:
 
 .. sourcecode:: python
 
@@ -109,7 +109,7 @@ Then edit the ``docs/conf.py`` file and add to the bottom:
     html_theme = "sphinx_rtd_theme"
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
-now run ``make html`` again, view the :file:`index.html` file and *now* you can
+now run :file:`make html` again, view the :file:`index.html` file and *now* you can
 sit back and truly enjoy the beautiful documentation.  Thank you `Read The Docs`_
 for the wonderful theme!
 
@@ -144,8 +144,6 @@ project files to it.
     $ git commit -m 'initial commit'
 
 
-
-
-.. _Github Gitignore: https://github.com/github/gitignore
+.. _Github .gitignore: https://github.com/github/gitignore
 .. _Github: https://github.com
 .. _Read The Docs: https://readthedocs.org
